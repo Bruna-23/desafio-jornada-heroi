@@ -1,0 +1,14 @@
+const posicaoInicial = parseInt(gets());
+const totalPassos = parseInt(gets());
+
+function jornadaHeroi(posicaoInicial, totalPassos) {
+    let posicaoAtual = posicaoInicial;
+    for (let i = 0; i < totalPassos; i++) {
+        posicaoAtual++;
+    }
+    return posicaoAtual;
+}
+
+let posicaoFinal = jornadaHeroi(posicaoInicial, totalPassos);
+
+print("Posicao final do heroi:", posicaoFinal);
